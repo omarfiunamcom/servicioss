@@ -1,0 +1,40 @@
+{
+  "name": "ssproyecto",
+  "version": "1.0.0",
+  "description": "Pagina web SS Universo FONO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "mongodb",
+    "sass",
+    "nodejs"
+  ],
+  "author": "Omar Hernandez Francisco",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.4",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.2.10",
+    "nanoid": "^3.3.2",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "nodemon": "^2.0.15",
+    "npm-check-updates": "^12.5.8",
+    "sass": "^1.50.0"
+  }
+}

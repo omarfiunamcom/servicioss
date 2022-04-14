@@ -1,0 +1,24 @@
+<section class="backgroundLogIn">
+    {{>avisos}}
+    {{>errors}}
+    <div class="cardLogIn">
+        <div class="cardLogIn__container">
+            <form class="logIn__form" action="/users/logIn" method="POST">
+                <h2>¡BIENVENIDO!</h2>
+                <div class="input-field">
+                    <img src="/img/@.png" alt="">
+                    <input type="email" name="email" placeholder="Correo electrónico">
+                </div>
+                <div class="input-field">
+                    <img src="/img/candado.png" alt="">
+                    <input type="password" name="password" placeholder="Contraseña">
+                </div>
+                <p class="logIn__question">¿Olvidaste tu contraseña?</p>
+                <input type="submit"  id="" value="INICIAR SESIÓN" class="btn">
+                <p class="logIn__question logIn__p">¿Aún no tienes cuenta?</p>
+                <p class="logIn__p"><a href="/users/signUp">¡Regístrate gratis aquí!</a></p>
+            </form>
+        </div>
+        <img class="cardLogIn__img" src="/img/estudiantes.png" alt="">
+    </div>
+</section>

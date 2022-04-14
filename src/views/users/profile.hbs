@@ -1,0 +1,45 @@
+<div class="backgroundProfile">
+    <div class="cardProfile">
+        <aside class="container__info">
+            <div class="images__content">
+                <img class="image__profile" src="/img/image_profile-default.svg" alt="">
+                <a href="">
+                    <img class="icon__edit" src="/img/icon_edit-profile.png" alt="">
+                </a>
+            </div>
+            <nav class="menu__profile">
+                <ul class="profile__links">
+                    <a href="">Editar Perfil</a>
+                    <a href="">Historial Clinico</a>
+                    <a href="">Notificaciones</a>
+                    <a href="">Privacidad</a>
+                </ul>
+            </nav>
+        </aside>
+        <div class="profile__content">
+            <form class="form-profile" action="POST">
+                <div class="field-profile field-profile__name">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" value="{{name}}">
+                </div>
+                <div class="field-profile field-profile__last">
+                    <label for="lastName">Apellidos</label>
+                    <input type="text" id="lastName" value="">
+                </div>
+                <div class="field-profile field-profile__email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="{{email}}">
+                </div>
+                <div class="field-profile field-profile__pass">
+                    <label for="password">Contraseña </label>
+                    <input type="password" id="password" value="">
+                </div>
+                <div class="field-profile field-profile__date">
+                    <label for="date">Fecha de Registro</label>
+                    <input type="text" id="date" value="{{date}}">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>

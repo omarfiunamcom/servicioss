@@ -1,0 +1,30 @@
+<section class="backgroundSignUp">
+    {{>errors}}
+    <div class="cardSignUp">
+        <div class="cardSignUp__container">
+            <form class="signUp__form" action="/users/signUp" method="POST">
+                <h2>CREA TU CUENTA</h2>
+                <div class="input-field">
+                    <img src="/img/login.png" alt="">
+                    <input type="text"  name="name" placeholder="Nombre completo" >
+                </div>
+                <div class="input-field">
+                    <img src="/img/@.png" alt="">
+                    <input type="email" name="email" placeholder="Correo electrónico">
+                </div>
+                <div class="input-field">
+                    <img src="/img/candado.png" alt="">
+                    <input type="password" name="password" placeholder="Contraseña">
+                </div>
+                <div class="input-field">
+                    <img src="/img/candado.png" alt="">
+                    <input type="password" name="confirm_password" placeholder="Repetir contraseña">
+                </div>
+                <input type="submit" name="" id="" value="Registrate" class="btn">
+                <p class="logIn__p logIn__question">¿Ya tienes tu cuenta?</p>
+                <p class="logIn__p"><a href="/users/logIn" >¡Inicia sesión aquí!</a></p>
+            </form>
+        </div>
+        <img class="cardSignUp__img" src="/img/Estudiantes.png" alt="">
+    </div>
+</section>

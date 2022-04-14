@@ -1,0 +1,31 @@
+<nav class="container menu">
+    <a class="menu__logo" href="/">
+        <img class="menu__img" src="/img/logo_menu.png" alt="Logo Universo Fono">
+    </a>
+    <ul class="menu__links">
+        <li class="menu__item"><a class="menu__link" href="/about">Nosotros</a></li>
+        <li class="menu__item">
+            <a class="menu__link" href="/activities">Actividades</a>
+            <ul style="display:none;" class="dropdown">
+                <li class="menu__inside">
+                    <a href="#" class="menu__link menu__link--inside"></a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">Comunidad</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Terapia</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contacto</a></li>
+        {{#if user}}
+        <a class="menu__account" href="/users/profile">
+            <img class="account__img" src="img/ico_account.png" alt="">
+        </a>
+        {{else}}
+        <a class="menu__link menu__link--unete" href="/joinUp"> <span class="link__unete-txt">Unete</span></a>
+        {{/if}}
+
+    </ul>
+    <a href="#" class="menu__burger" id="menu__burger-click">
+        <img src="/img/menu-burger.svg" alt="">
+    </a>
+
+</nav><!-- container menu-->
